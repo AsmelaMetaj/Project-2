@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div{
+    padding: 0px;
+    background-color: floralwhite;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: floralwhite;
+    max-width: 850px;
+    margin: auto;
+    position: relative;    
+    padding: 60px 0;
+  }
+.col-1{
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px 60px 30px 30px;
+    width: 100%;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    letter-spacing: 1px;
+}
+.col-2{
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px 60px 30px 30px;
+    width: 100%;
+    color: white;
+    letter-spacing: 1px;
+}
+.col-3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px 60px 30px 30px;
+    width: 100%;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: hsl(0, 0%, 95%);
+}
+.container p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    word-spacing: 7px;
+    padding-bottom: 80px;
+    line-height: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    position: static;
+}
+.container button{
+    background-color: hsl(0, 0%, 95%);;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px 12px 30px ;
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    letter-spacing: 1px;
+}
+.container button:hover{
+    background-color: transparent;
+    border: 0.5cm;
+    color: white;
+    border: 2px solid;
+}
+.col-1 button{
+    color: chocolate;
+}
+.col-2 button{
+    color: hsl(184, 100%, 22%);
+}
+.col-3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 1440px){
+    .div{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 804px){
+    .container{
+        flex-direction: column;
+        padding: 60px 30px 60px 30px;
+        
+    }
+    .col-1{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+    .col-3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+}
+    
